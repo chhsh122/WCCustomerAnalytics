@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content='width=device-width,minimum-scale=1,initial-scale=1'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+	<link rel="stylesheet" href="static/css/progress.css">
+
+</head>
+<body>
+    <!--<header class="bar bar-nav">
+        <button class="button button-link button-nav pull-left">
+            <span class="icon icon-left"></span>
+            返回
+        </button>
+        <h1 class="title"></h1>
+    </header>-->
+    <div class="content">
+        <div class="app-info clearfix">
+            <div class="clearfix">
+                <div class="left-path floatleft">
+                    <img class="app-img" src="static/img/365@3x.png">
+                </div>
+                <div class="right-path floatleft">
+                    <div class="app-title">365彩票</div>
+                    <div class="app-cont">365彩票原汁原味再现家乡经典！</div>
+                    <div>
+						<div class="flex-center" >
+							<span class="container">
+								<span id="progressBar" class="h-100P pbar" style="display: none"></span>
+                                <!-- 1.获取 2. 准备中...59 3.下载中  45% -->
+                                <span id="get-btnspan" class="get-btn"><a class="get-btn" id="aurl">获取</a></span>
+                                <img class="fx-icon" src="static/img/fx@3x.png">
+							</span>
+						</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="score-div clearfix">
+                <div class="score floatleft frist">
+                    <div>
+                        <span>4.9</span>
+                        <img src="static/img/wjx1@3x.png">
+                        <img src="static/img/wjx1@3x.png">
+                        <img src="static/img/wjx1@3x.png">
+                        <img src="static/img/wjx1@3x.png">
+                        <img src="static/img/wjx1@3x.png">
+                    </div>
+                    <div class="small-font">
+                        424万个评分
+                    </div>
+                </div>
+                <div class="score floatleft second">
+                    <div>
+                        <span>#3</span>
+                    </div>
+                    <div class="small-font">
+                        娱乐场游戏
+                    </div>
+                </div>
+                <div class="score floatright">
+                    <div>
+                        <span>17+</span>
+                    </div>
+                    <div class="small-font">
+                        年龄
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="introduction">
+            <div class="intro-title">简介</div>
+            <div class="intro-cont IntroContents">
+                <div class="intro-contents">
+                    365彩票官方出品，以安全、便捷、快速为服务宗旨，为您提供最专业的购彩平台。全网最快的彩票 ：时时彩、PC蛋蛋、北京PK拾、广东11选5、六合彩开奖，让您随时随地投注彩票，是您最好的省钱中奖利器。赶快邀请您的朋友一起加入，分享天天中奖的喜悦~
+                </div>
+                <div class="more IntroMore">更多</div>
+            </div>
+        </div>
+        <div class="comments">
+            <div class="intro-title">评分及评论<span class="look-all">查看全部</span></div>
+            <div class="intro-cont clearfix">
+                <div class="intro-left">
+                    <div class="big-text">4.9</div>
+                    <div class="small-text">满分 5 分</div>
+                </div>
+                <div class="intro-right">
+                    <div class="star clearfix">
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 93%"></div>
+                        </div>
+                        <img src="static/img/wjx2@3x.png">
+                        <img src="static/img/wjx2@3x.png">
+                        <img src="static/img/wjx2@3x.png">
+                        <img src="static/img/wjx2@3x.png">
+                        <img src="static/img/wjx2@3x.png">
+                    </div>
+                    <div class="star clearfix">
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 5%"></div>
+                        </div>
+                        <img src="static/img/wjx2@3x.png">
+                        <img src="static/img/wjx2@3x.png">
+                        <img src="static/img/wjx2@3x.png">
+                        <img src="static/img/wjx2@3x.png">
+                    </div>
+                    <div class="star clearfix">
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 1.5%"></div>
+                        </div>
+                        <img src="static/img/wjx2@3x.png">
+                        <img src="static/img/wjx2@3x.png">
+                        <img src="static/img/wjx2@3x.png">
+                    </div>
+                    <div class="star clearfix">
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 0%"></div>
+                        </div>
+                        <img src="static/img/wjx2@3x.png">
+                        <img src="static/img/wjx2@3x.png">
+                    </div>
+                    <div class="star clearfix">
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 3%"></div>
+                        </div>
+                        <img src="static/img/wjx2@3x.png">
+                    </div>
+                    <div class="small-text-right">4,344,532 个评分</div>
+                </div>
+            </div>
+            <!-- Slider -->
+            <div class="swiper-container" data-space-between='10'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-comments">
+                            <div class="clearfix">
+                                <div class="floatleft">
+                                    <div class="comment-title">推荐大家</div>
+                                    <div class="comment-star">
+                                        <img src="static/img/wjx3@3x.png">
+                                        <img src="static/img/wjx3@3x.png">
+                                        <img src="static/img/wjx3@3x.png">
+                                        <img src="static/img/wjx3@3x.png">
+                                        <img src="static/img/wjx3@3x.png">
+                                    </div>
+                                </div>
+                                <div class="floatright comment-user">
+                                    <div>4月9日</div>
+                                    <div>超级海豚</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                抱着试玩的心理下载的游戏没想到游戏居然还不
+                                错在玩玩看吧多出特技高属性装备就是对我支持
+                                你最好的回报！老少皆宜！真的好好玩呀！
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-comments">
+                            <div class="clearfix">
+                                <div class="floatleft">
+                                    <div class="comment-title">推荐大家</div>
+                                    <div class="comment-star">
+                                        <img src="static/img/wjx3@3x.png">
+                                        <img src="static/img/wjx3@3x.png">
+                                        <img src="static/img/wjx3@3x.png">
+                                        <img src="static/img/wjx3@3x.png">
+                                        <img src="static/img/wjx3@3x.png">
+                                    </div>
+                                </div>
+                                <div class="floatright comment-user">
+                                    <div>4月9日</div>
+                                    <div>超级海豚</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                抱着试玩的心理下载的游戏没想到游戏居然还不
+                                错在玩玩看吧多出特技高属性装备就是对我支持
+                                你最好的回报！老少皆宜！真的好好玩呀！
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-comments">
+                            <div class="clearfix">
+                                <div class="floatleft">
+                                    <div class="comment-title">推荐大家</div>
+                                    <div class="comment-star">
+                                        <img src="static/img/wjx3@3x.png">
+                                        <img src="static/img/wjx3@3x.png">
+                                        <img src="static/img/wjx3@3x.png">
+                                        <img src="static/img/wjx3@3x.png">
+                                        <img src="static/img/wjx3@3x.png">
+                                    </div>
+                                </div>
+                                <div class="floatright comment-user">
+                                    <div>4月9日</div>
+                                    <div>超级海豚</div>
+                                </div>
+                            </div>
+                            <div class="comment-text">
+                                抱着试玩的心理下载的游戏没想到游戏居然还不
+                                错在玩玩看吧多出特技高属性装备就是对我支持
+                                你最好的回报！老少皆宜！真的好好玩呀！
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="comments">
+            <div class="intro-title">新功能<span class="look-all">版本历史记录</span></div>
+            <div class="clearfix">
+                <div class="floatleft features-text">版本2.1.4</div>
+                <div class="floatright features-text">5天前</div>
+            </div>
+            <div class="new-features">
+                <p>本次版本更新内容有：</p>
+                <p> 1、开奖信息及时推送，中奖极速派奖，提现10分钟到账！</p>
+                <p> 2、手机摇一摇，大奖摇过来，投注灵活，中奖率达75%！</p>
+                <div class="new-hide NewHide">
+                    <p>1、约牌排行榜更新，支持展示所有名次啦～</p>
+                    <p>1、约牌排行榜更新，支持展示所有名次啦～</p>
+                    <p>1、约牌排行榜更新，支持展示所有名次啦～</p>
+                    <p>1、约牌排行榜更新，支持展示所有名次啦～</p>
+                </div>
+                <div class="more NewMore">更多</div>
+            </div>
+        </div>
+        <div class="message">
+            <div class="message-title">信息</div>
+            <div class="list-block">
+                <ul>
+                    <li class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title">开发商</div>
+                            <div class="item-after">Shanghai Technology Co.,Ltd</div>
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title">大小</div>
+                            <div class="item-after">112MB</div>
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title">类别</div>
+                            <div class="item-after">游戏：卡牌游戏</div>
+                        </div>
+                    </li>
+                    <li class="item-content item-link ItemLink">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                            <div class="item-title">兼容性</div>
+                            <div class="item-after">可在此iPhone上使用</div>
+                        </div>
+                    </li>
+                    <li class="item-content ItemHide" style="display: none">
+                        <div class="item-inner item-inner2">
+                            <div class="item-title">兼容性</div>
+                            <div class="">可在此iPhone上使用可在此iPhone上使用可在此iPhone上使用可在此iPhone上使用可在此iPhone上使用可在此iPhone上使用</div>
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title">语言</div>
+                            <div class="item-after">简体中文</div>
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title">年龄分级</div>
+                            <div class="item-after">17+</div>
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title">版权</div>
+                            <div class="item-after">©️365彩票</div>
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title item-a">开发者网站</div>
+                            <div class="item-after">
+                                <img src="static/img/kfzwz@3x.png">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title item-a">隐私政策</div>
+                            <div class="item-after">
+                                <img src="static/img/yszc@3x.png">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="support">
+            <div class="support-title">支持</div>
+            <ul>
+                <li class="clearfix">
+                    <div class="floatleft">
+                        <img src="static/img/qb@3x.png">
+                    </div>
+                    <div class="floatright">
+                        <div>钱包</div>
+                        <div class="small-font">集中管理所有凭证最简便的方式</div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="floatleft">
+                        <img src="static/img/jrgx@3x.png" class="img-top">
+                    </div>
+                    <div class="floatright">
+                        <div>家人共享</div>
+                        <div class="small-font">启用“家人共享”后，做多六位家庭成员可以使用此应用。家庭成员不能共享App内购买。</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script src="js/index365.js"></script>
+
+</body>
+</html>
